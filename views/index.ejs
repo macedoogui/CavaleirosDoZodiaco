@@ -4,31 +4,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+    <title>Projeto 02 Módulo 2</title>
 </head>
+  
 <body>
 
-    <h1>Pokedéx</h1>
+    <header>
+      <img id= 'logo' src="" alt="logo saint seiya">
 
-    <section>
+        <h1>Cavaleiros do Zodíaco</h1>      
+    </header>
 
-        <% pokedex.forEach((pokemon)=> { %>
+  <main>
+
+    <nav>
+      <ul>
+        <li>.01-Seiya de Pégaso</li>
+        <li>.02-Shiryu de Dragão</li>
+        <li>.03-Shun de Andrômeda</li>
+        <li>.04-Hyoga de Cisne</li>
+        <li>.05-Ikki de Fênix</li>
+      </ul>
+    </nav>
+
+    <section id='cards'>
+      
+      <h2>Cavaleiros</h2>
+      
+        <% cavaleiros.forEach((personagem)=> { %>
+          <div>
+            <h2 class ='id'> <%= personagem.id %> </h2>
+            <h2 class ='nome'> <%= personagem.nome %> </h2>
+            <img src="<%= personagem.imagem %>" alt = 'cavaleiro'>
             
-                <img src="<%= pokemon.imagem %>" alt="">
-                <h2>
-                    <%= pokemon.nome %>
-                </h2>
-                <p>
-                    <%= pokemon.descriçao %>
-                </p>
-                <p>Tipo: <%= pokemon.tipo %>
-                </p>
+            <h2 class = classificaçao ><%=personagem.classificaçao  %></h2>
+            <h2 class = armadura> Armadura: <%=personagem.armadura  %></h2>
+            <h2 class = cosntelaçao> Constelação: <%=personagem.constelaçao  %></h2>
+            <h2 class = divindade>Divindade: <%=personagem.divindade %></h2>
+              
+              <p class = aniversario >Aniversário: <%= personagem.aniversario %> </p>
+              <p class = signo>Signo: <%= personagem.signo %></p>
+              <p class = habilidade>Golpe Especial: <%= personagem.habilidade %></p>
 
-            </div>
-            <% }) %>
-
+              <h3 class = 'descriçao'>Descrição: <%= personagem.descriçao %></h3>
+            
+          </div>
+          
+        <% }) %>           
     </section>
+
+  </main>
 
     
 </body>
 </html>
+
+
+
+
+
+        
