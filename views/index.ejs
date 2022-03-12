@@ -10,49 +10,51 @@
   
 <body>
 
-    <header>
+  <nav>      
+    <ul>
       <img id= 'logo' src="" alt="logo saint seiya">
-
-        <h1>Cavaleiros do Zodíaco</h1>      
-    </header>
+      <li>.01-Seiya de Pégaso</li>
+      <li>.02-Shiryu de Dragão</li>
+      <li>.03-Shun de Andrômeda</li>
+      <li>.04-Hyoga de Cisne</li>
+      <li>.05-Ikki de Fênix</li>
+    </ul>
+  </nav>
 
   <main>
 
-    <nav>
-      <ul>
-        <li>.01-Seiya de Pégaso</li>
-        <li>.02-Shiryu de Dragão</li>
-        <li>.03-Shun de Andrômeda</li>
-        <li>.04-Hyoga de Cisne</li>
-        <li>.05-Ikki de Fênix</li>
-      </ul>
-    </nav>
 
-    <section id='cards'>
+    
+    <header>
+
+      <h1>Cavaleiros do Zodíaco</h1>      
+
+    </header>
+
+    <h2 id ='subtitulo'>Cavaleiros</h2>
       
-      <h2>Cavaleiros</h2>
-      
-        <% cavaleiros.forEach((personagem)=> { %>
-          <div>
-            <h2 class ='id'> <%= personagem.id %> </h2>
-            <h2 class ='nome'> <%= personagem.nome %> </h2>
-            <img src="<%= personagem.imagem %>" alt = 'cavaleiro'>
-            
-            <h2 class = classificaçao ><%=personagem.classificaçao  %></h2>
-            <h2 class = armadura> Armadura: <%=personagem.armadura  %></h2>
-            <h2 class = cosntelaçao> Constelação: <%=personagem.constelaçao  %></h2>
-            <h2 class = divindade>Divindade: <%=personagem.divindade %></h2>
+        <section id='cards'>                     
+            <% cavaleiros.forEach((personagem)=> { %>
+              <div>
+                <h2 class ='id'> <%= personagem.id %> </h2>
+                <h2 class ='nome'> <%= personagem.nome %> </h2>
+                <img src="<%= personagem.imagem %>" alt = 'cavaleiro'>
+                
+                <h2 class = classificaçao ><%=personagem.classificaçao  %></h2>
+                <h2 class = armadura> Armadura: <%=personagem.armadura  %></h2>
+                <h2 class = cosntelaçao> Constelação: <%=personagem.constelaçao  %></h2>
+                <h2 class = divindade>Divindade: <%=personagem.divindade %></h2>
+                  
+                  <p class = aniversario >Aniversário: <%= personagem.aniversario %> </p>
+                  <p class = signo>Signo: <%= personagem.signo %></p>
+                  <p class = habilidade>Golpe Especial: <%= personagem.habilidade %></p>
+
+                  <h3 class = 'descriçao'>Descrição: <%= personagem.descriçao %></h3>
+                
+              </div>
               
-              <p class = aniversario >Aniversário: <%= personagem.aniversario %> </p>
-              <p class = signo>Signo: <%= personagem.signo %></p>
-              <p class = habilidade>Golpe Especial: <%= personagem.habilidade %></p>
-
-              <h3 class = 'descriçao'>Descrição: <%= personagem.descriçao %></h3>
-            
-          </div>
-          
-        <% }) %>           
-    </section>
+            <% }) %>           
+        </section>     
 
   </main>
 

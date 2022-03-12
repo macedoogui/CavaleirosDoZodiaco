@@ -10,7 +10,7 @@ const cavaleiros = [
   {
     id: '.01',
     nome: 'Seiya de Pégaso',      
-    imagem: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv_2QG9rpTSr09VWYWbV1_2w8-zVX3ayY-3joNkuQDLg7Qi_KkLQm1mhqk9c0qPxICoBI&usqp=CAU',
+    imagem: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZbM31FpIT2mucJC-j0igCtr1DDlgMJmjVDg&usqp=CAU',
     classificaçao: 'Cavaleiro de Bronze',
     armadura: "Armadura de Pégaso",
     constelaçao:'Pégasus',
@@ -24,7 +24,7 @@ const cavaleiros = [
   {
     id: '.02',
     nome: 'Shiryu de Dragão',      
-    imagem: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUlhV8V8uFC2t_F34b69cpdL3zqAOtVSMapA&usqp=CAU',
+    imagem: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtorvc6Of4HvPoJNNZrtb6Z4aC0f43rmbDKA&usqp=CAU',
     classificaçao: 'Cavaleiro de Bronze',
     armadura: "Armadura de Dragão",
     constelaçao:'Dragão',
