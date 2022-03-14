@@ -23,23 +23,18 @@
   </nav>
 
   <main>
-
-
-    
     <header>
 
       <h1>Cavaleiros do Zodíaco</h1>      
-
     </header>
 
     <h2 id ='subtitulo'>Cavaleiros</h2>
+    
       
         <section id='cards'>
-
-          
-
+ 
             <% cavaleiros.forEach((personagem)=> { %>
-              <div>
+          <div>
                 <h2 class ='id'> <%= personagem.id %> </h2>
                 <h2 class ='nome'> <%= personagem.nome %> </h2>
                 <img src="<%= personagem.imagem %>" alt = 'cavaleiro'>
@@ -54,17 +49,14 @@
                   <p class = habilidade>Golpe Especial: <%= personagem.habilidade %></p>
 
                   <h3 class = 'descriçao'>Descrição: <%= personagem.descriçao %></h3>                
-              </div>
+              </div>                        <% }) %>
 
-              
-            <% }) %>           
+          <img id ='background' src='https://i.pinimg.com/originals/f2/d2/1e/f2d21e3eabd1a79d69dc046d99ae9905.jpg'>
+                
         </section>
-        
-        
 
   </main>
-
-    
+ 
 </body>
 </html>
 
