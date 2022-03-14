@@ -10,9 +10,10 @@
   
 <body>
 
-  <nav>      
-    <ul>
-      <img id= 'logo' src="" alt="logo saint seiya">
+  <nav>
+    
+    <img id= 'logo' src="https://www.pngitem.com/pimgs/m/442-4421980_saint-seiya-logo-png-transparent-png.png" alt="logo saint seiya">
+    <ul>      
       <li>.01-Seiya de Pégaso</li>
       <li>.02-Shiryu de Dragão</li>
       <li>.03-Shun de Andrômeda</li>
@@ -33,7 +34,10 @@
 
     <h2 id ='subtitulo'>Cavaleiros</h2>
       
-        <section id='cards'>                     
+        <section id='cards'>
+
+          
+
             <% cavaleiros.forEach((personagem)=> { %>
               <div>
                 <h2 class ='id'> <%= personagem.id %> </h2>
@@ -49,12 +53,14 @@
                   <p class = signo>Signo: <%= personagem.signo %></p>
                   <p class = habilidade>Golpe Especial: <%= personagem.habilidade %></p>
 
-                  <h3 class = 'descriçao'>Descrição: <%= personagem.descriçao %></h3>
-                
+                  <h3 class = 'descriçao'>Descrição: <%= personagem.descriçao %></h3>                
               </div>
+
               
             <% }) %>           
-        </section>     
+        </section>
+        
+        
 
   </main>
 

@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
+
 *{
   margin:0 ;
   padding:0 ;
@@ -6,6 +9,7 @@
 body{
   display:flex;
   width: 100%;
+  font-family: Fredoka;
 }
 
 nav{
@@ -13,38 +17,58 @@ nav{
   width:20%;
   position: fixed;
   height:100vh;
+  overflow-y: scroll;
 }
 
 main{
-  width: 80%;
+  width: 70%;
   position:absolute;
-  left:20%;    
+  left:25%;    
 }
 
 #logo{
-  border:solid black;
+  width: 99%;
+  margin-bottom: 2rem;
+  border-bottom: solid black 1px;
+  border-right: solid black 1px;
+
+}
+
+ul{
+  padding:0 5px 5px 15px;
 }
 
 header{
+  font-family: Fredoka;
   text-align: center;
+  color:#fff
 }
 
+
 #subtitulo{
-  padding-left: 10rem;
+  margin-top: 2rem;;
+  padding-left: 7rem;
+  font-family: Fredoka;
+  color:#fff
+}
+
+#background{
+  position:fixed;  
 }
 
 section#cards{
   display:flex;
   flex-wrap: wrap;
   justify-content:space-evenly;
-  
+  background: url("/public/img/background.jpg.jpg") 
 }
 
 div{
-  border:solid black;
+  border:solid #fff;
   padding:2rem;
   margin-top:2rem;
   width: 40rem;
+  opacity:1;
 
 }
 
