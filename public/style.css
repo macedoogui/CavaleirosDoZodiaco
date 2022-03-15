@@ -3,6 +3,7 @@
 *{
   margin:0 ;
   padding:0 ;
+  text-decoration:none;
 }
   
 body{
@@ -23,32 +24,85 @@ nav{
 main{
   position:absolute;
   left:20%;
-  background-color:#11004d;
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqPG6eqYuPx3opyB_C10Ub7EDcz8vzPx5qA35ZL7uqgZP49XmRYMvn_CdR1yjVGl-NkzU&usqp=CAU');  
 }
 
 #logo{
-  width: 99%;
-  margin-bottom: 2rem;
-  border-bottom: solid black 1px;
-  border-right: solid black 1px;
+  width: 30%;
+  margin-top:1rem;
+}
 
+#seiya{
+  display:block;
+  margin-left:30%;
+  width:50%;
 }
 
 ul{
+  margin-top:2rem;
   padding:0 5px 5px 15px;
 }
 
 header{
   font-family: Fredoka;
   text-align: center;
-  color:#d6ba00;
-  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqPG6eqYuPx3opyB_C10Ub7EDcz8vzPx5qA35ZL7uqgZP49XmRYMvn_CdR1yjVGl-NkzU&usqp=CAU');
+  
 }
+
+#cadastro h2{
+  color: gold;
+  padding-bottom: 3rem;
+  width:100%;
+}
+
+#cadastro{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  padding:5rem;
+}
+
+#cadastro form{
+  padding:5rem;  
+  width:50%;
+  border:groove #FFD700;
+  box-shadow: inset 0 0 1em #FFD700;
+  
+}
+
+label{
+  color:gold;
+  
+  
+}
+
+#cadastro input{
+  width:100%;
+  margin-bottom:2rem;
+}
+
+button#cadastrar{
+    padding:1rem;
+    font-family: Fredoka;
+    font-size:1rem;
+    cursor:pointer;
+  transition:all .3s ease-in-out
+  }
+
+button#cadastrar:hover{
+    padding:1rem;
+    font-family: Fredoka;
+    font-size:1rem;
+    background-color:gold;
+    color:black;
+  cursor:pointer;
+  transition:all .3s ease-in-out
+  }
 
 #subtitulo{
   margin-top: 2rem;;
   font-family: Fredoka;
-  color:#fff; 
+  color:#d6ba00; 
 }
 
 section#cards{
@@ -63,7 +117,7 @@ section#cards{
   z-index:1;
   left:20%;
   height:80%;
-  opacity:0.5;
+  opacity:.5;
 }
 
 div{  
@@ -73,7 +127,12 @@ div{
   z-index:2;
   color:#fff;
   background-color:#05050590;
+  border:groove #CD7F32;
+  box-shadow: inset 0 0 1em #CD7F32;
+  background-image='https://i.pinimg.com/originals/f2/d2/1e/f2d21e3eabd1a79d69dc046d99ae9905.jpg';
 }
+
+
 
 
 

@@ -12,21 +12,56 @@
 
   <nav>
     
-    <img id= 'logo' src="https://www.pngitem.com/pimgs/m/442-4421980_saint-seiya-logo-png-transparent-png.png" alt="logo saint seiya">
+    <img id= 'seiya' src="https://64.media.tumblr.com/6b6bd15d997ae12db217b739c2af692b/tumblr_mp67n0UnXA1rvobogo4_250.gifv" alt="gif seiya">
     <ul>      
-      <li>.01-Seiya de Pégaso</li>
-      <li>.02-Shiryu de Dragão</li>
-      <li>.03-Shun de Andrômeda</li>
-      <li>.04-Hyoga de Cisne</li>
-      <li>.05-Ikki de Fênix</li>
+      <li> <a href=''> .01-Seiya de Pégaso</a></li>
+      <li> <a href=''>.02-Shiryu de Dragão</a></li>
+      <li><a href=''>.03-Shun de Andrômeda</a></li>
+      <li><a href=''>.04-Hyoga de Cisne</a></li>
+      <li><a href=''>.05-Ikki de Fênix</a></li>
     </ul>
   </nav>
 
   <main>
     <header>
-      <h1>Cavaleiros do Zodíaco</h1> 
-      <h2 id ='subtitulo'>Cavaleiros</h2>
+      <img id = 'logo' src='../img/logo cdz.png' alt='logo cdz' 
+      
     </header>
+
+    <section id ='cadastro'>
+
+            <h2>Cadastre um novo Cavaleiro</h2>
+
+    <form action="/add" method='post'>
+
+      <label for='nome'> Nome: </label>
+      <input type='text' id='nome' name='nome'>
+      <label for='imagem'> link da imagem: </label>
+      <input type='text' id='imagem' name='imagem'>
+      <label for='classificaçao'> Classificação: </label>
+      <input type='text' id='classificaçao' name='classificaçao'>
+      <label for='armadura'> Armadura: </label>
+      <input type='text' id='armadura' name='armadura'>
+      <label for='constelaçao'> Constelação: </label>
+      <input type='text' id='constelaçao' name='constelaçao'>
+      <label for='divindade'> Divindade: </label>
+      <input type='text' id='divindade' name='divindade'>
+      <label for='aniversario'> Aniversário: </label>
+      <input type='text' id='aniversario' name='aniversario'>
+      <label for='signo'> Signo: </label>
+      <input type='text' id='signo' name='signo'>
+      <label for='habilidade'> Habilidade: </label>
+      <input type='text' id='habilidade' name='habilidade'>
+      <label for='descriçao'> Descrição: </label>
+      <input type='text' id='descriçao' name='descriçao'>
+
+        <button id='cadastrar' type='submit'> Cadastrar </button>
+   
+    </form>
+
+                                  </section>
+
+      <h1 id ='subtitulo'>Cavaleiros de Bronze</h1>
 
         <section id='cards'>
  

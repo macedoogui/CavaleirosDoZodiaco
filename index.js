@@ -5,10 +5,11 @@ const app = express();
 app.set("view engine", "ejs");
 
 app.use(express.static(path.join(__dirname, "public")));
+  app.use(express.urlencoded());
 
 const cavaleiros = [
   {
-    id: '.01',
+    id: .01,
     nome: 'Seiya de Pégaso',      
     imagem: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZbM31FpIT2mucJC-j0igCtr1DDlgMJmjVDg&usqp=CAU',
     classificaçao: 'Cavaleiro de Bronze',
@@ -22,7 +23,7 @@ const cavaleiros = [
   },
 
   {
-    id: '.02',
+    id: .02,
     nome: 'Shiryu de Dragão',      
     imagem: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtorvc6Of4HvPoJNNZrtb6Z4aC0f43rmbDKA&usqp=CAU',
     classificaçao: 'Cavaleiro de Bronze',
@@ -37,7 +38,7 @@ const cavaleiros = [
   },
 
   {
-    id: '.03',
+    id: .03,
     nome: 'Shun de Andrômeda',      
     imagem: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZNtR3hElf3g5A7PtClrTJv3oYEA8or1qSKA&usqp=CAU',
     classificaçao: 'Cavaleiro de Bronze',
@@ -51,7 +52,7 @@ const cavaleiros = [
   },
 
   {
-    id: '.04',
+    id:.04,
     nome: 'Hyoga de Cisne',      
     imagem: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwLFECIQT6FunF5CEXbpuS1Q-kbFbZIggyKA&usqp=CAU',
     classificaçao: 'Cavaleiro de Bronze',
@@ -65,7 +66,7 @@ const cavaleiros = [
   },
 
   {
-    id: '.05',
+    id:.05,
     nome: 'Ikki de Fênix',      
     imagem: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ33Uv90ztoHtTyZUlpvdOpd-M9S445sW6nDg&usqp=CAU',
     classificaçao: 'Cavaleiro de Bronze',
@@ -81,6 +82,14 @@ const cavaleiros = [
 
 app.get("/", (req, res) => {
   res.render("index" , {cavaleiros});
+});
+
+app.post("/add", (req,res) => {
+  const personagem = req.body;
+  cavaleiros.push(personagem);
+
+  res.redirect('/');
+  
 });
 
 app.listen(3000)
