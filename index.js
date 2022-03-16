@@ -4,14 +4,13 @@ const app = express();
 
 app.set("view engine", "ejs");
 
-app.use(express.static(path.join(__dirname, "public")));
-  app.use(express.urlencoded());
+app.use(express.static(path.join(__dirname, "public"))); app.use(express.urlencoded());
 
 const cavaleiros = [
   {
     id: .01,
     nome: 'Seiya de Pégaso',      
-    imagem: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZbM31FpIT2mucJC-j0igCtr1DDlgMJmjVDg&usqp=CAU',
+    imagem: 'https://static.wikia.nocookie.net/saintseya/images/7/70/SEIYA_DE_P%C3%89GASO.png/revision/latest/scale-to-width-down/329?cb=20160805213355&path-prefix=pt',
     classificaçao: 'Cavaleiro de Bronze',
     armadura: "Armadura de Pégaso",
     constelaçao:'Pégasus',
@@ -25,7 +24,7 @@ const cavaleiros = [
   {
     id: .02,
     nome: 'Shiryu de Dragão',      
-    imagem: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtorvc6Of4HvPoJNNZrtb6Z4aC0f43rmbDKA&usqp=CAU',
+    imagem: 'https://static.wikia.nocookie.net/saintseya/images/9/9e/Shiryu_3_255.png/revision/latest/scale-to-width-down/350?cb=20151229134313&path-prefix=pt',
     classificaçao: 'Cavaleiro de Bronze',
     armadura: "Armadura de Dragão",
     constelaçao:'Dragão',
@@ -40,7 +39,7 @@ const cavaleiros = [
   {
     id: .03,
     nome: 'Shun de Andrômeda',      
-    imagem: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZNtR3hElf3g5A7PtClrTJv3oYEA8or1qSKA&usqp=CAU',
+    imagem: 'https://static.wikia.nocookie.net/saintseya/images/a/ac/SHUN_DE_ANDR%C3%94MEDA.png/revision/latest/scale-to-width-down/350?cb=20170526213118&path-prefix=pt',
     classificaçao: 'Cavaleiro de Bronze',
     armadura: "Armadura de Andrômeda",
     constelaçao:'Andrômeda',
@@ -54,7 +53,7 @@ const cavaleiros = [
   {
     id:.04,
     nome: 'Hyoga de Cisne',      
-    imagem: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwLFECIQT6FunF5CEXbpuS1Q-kbFbZIggyKA&usqp=CAU',
+    imagem: 'https://static.wikia.nocookie.net/saintseya/images/9/9d/Hyoga_3_cloth.png/revision/latest/scale-to-width-down/350?cb=20130331042305&path-prefix=pt',
     classificaçao: 'Cavaleiro de Bronze',
     armadura: "Armadura de Cisne",
     constelaçao:'Cisne',
@@ -68,7 +67,7 @@ const cavaleiros = [
   {
     id:.05,
     nome: 'Ikki de Fênix',      
-    imagem: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ33Uv90ztoHtTyZUlpvdOpd-M9S445sW6nDg&usqp=CAU',
+    imagem: 'https://static.wikia.nocookie.net/saintseya/images/7/71/Ikki_3_cloth.png/revision/latest/scale-to-width-down/350?cb=20120325024118&path-prefix=pt',
     classificaçao: 'Cavaleiro de Bronze',
     armadura: "Armadura de Fênix",
     constelaçao:'Fênix',

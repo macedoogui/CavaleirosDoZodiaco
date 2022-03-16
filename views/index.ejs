@@ -11,9 +11,8 @@
 <body>
 
   <img id ='background' src='https://i.pinimg.com/originals/f2/d2/1e/f2d21e3eabd1a79d69dc046d99ae9905.jpg'>
-
-  <nav>
-    
+  
+  <nav>   
     <img id= 'seiya' src="https://64.media.tumblr.com/6b6bd15d997ae12db217b739c2af692b/tumblr_mp67n0UnXA1rvobogo4_250.gifv" alt="gif seiya">
 
     <h1><a href="#cadastro"> Cadastro de Cavaleiro</a></h1>
@@ -27,17 +26,15 @@
 
   <main>
     <header>
-      <img id = 'logo' src='../img/logo cdz.png' alt='logo cdz'>
-      
-    </header>
+      <img id = 'logo' src='../img/logo cdz.png' alt='logo cdz'>       </header>
 
     <section id ='cadastro'>
-
-            <h2>Cadastre um novo Cavaleiro</h2>
-            <h3>Para mais informações de personagens,<a href="https://saintseiya.fandom.com/pt-br/wiki/Saint_Seiya_Wiki" target="_blank" > clique aqui.</a></h3>
+     <h2>Cadastre um novo Cavaleiro</h2>
+      
+     <h3>Para mais informações de personagens,<a href="https://saintseiya.fandom.com/pt-br/wiki/Saint_Seiya_Wiki" target="_blank" > clique aqui.</a></h3>
 
     <form action="/add" method='post'>
-
+      
       <label for='nome'> Nome: </label>
       <input type='text' id='nome' name='nome'>
       <label for='imagem'> link da imagem: </label>
@@ -70,7 +67,9 @@
         <section id='cards'>
  
             <% cavaleiros.forEach((personagem)=> { %>
-          <div id ='<%= personagem.id %>'>
+          <div id ='<%= personagem.id %>' class='card'>
+            
+            <div id='cardFront'>
                 <h2 class ='id'> <%= personagem.id %> </h2>
                 <h2 class ='nome'> <%= personagem.nome %> </h2>
                 <img src="<%= personagem.imagem %>" alt = 'cavaleiro'>
@@ -83,13 +82,19 @@
                   <p class = aniversario >Aniversário: <%= personagem.aniversario %> </p>
                   <p class = signo>Signo: <%= personagem.signo %></p>
                   <p class = habilidade>Golpe Especial: <%= personagem.habilidade %></p>
+  </div>
 
-                  <h3 class = 'descriçao'>Descrição: <%= personagem.descriçao %></h3>                
-          </div>                        <% }) %>
+            <div id='cardBack'>
+              <h3 class = 'descriçao'>Descrição: <%= personagem.descriçao %></h3>
+            </div>  
+                                  
+          </div>
+              
+            <% }) %>
                        
         </section>
 
-        <footer>Este é um projeto criado por Guilherme Macedo.</footer>
+        <footer><p>Este é um projeto criado por Guilherme Macedo.</p></footer>
 
   </main>
 
