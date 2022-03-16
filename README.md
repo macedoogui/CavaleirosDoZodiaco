@@ -1,1 +1,1 @@
-# Pokedex
+Cavaleiros do Zodíaco
