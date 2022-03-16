@@ -10,27 +10,31 @@
   
 <body>
 
+  <img id ='background' src='https://i.pinimg.com/originals/f2/d2/1e/f2d21e3eabd1a79d69dc046d99ae9905.jpg'>
+
   <nav>
     
     <img id= 'seiya' src="https://64.media.tumblr.com/6b6bd15d997ae12db217b739c2af692b/tumblr_mp67n0UnXA1rvobogo4_250.gifv" alt="gif seiya">
-    <ul>      
-      <li> <a href=''> .01-Seiya de Pégaso</a></li>
-      <li> <a href=''>.02-Shiryu de Dragão</a></li>
-      <li><a href=''>.03-Shun de Andrômeda</a></li>
-      <li><a href=''>.04-Hyoga de Cisne</a></li>
-      <li><a href=''>.05-Ikki de Fênix</a></li>
+
+    <h1><a href="#cadastro"> Cadastro de Cavaleiro</a></h1>
+    
+    <% cavaleiros.forEach((personagem) => { %>    
+    <ul>     
+    <h2>  <a href= "#<%= personagem.id %>"> <%= personagem.nome %> </a> </h2>            
     </ul>
+    <%  })  %>
   </nav>
 
   <main>
     <header>
-      <img id = 'logo' src='../img/logo cdz.png' alt='logo cdz' 
+      <img id = 'logo' src='../img/logo cdz.png' alt='logo cdz'>
       
     </header>
 
     <section id ='cadastro'>
 
             <h2>Cadastre um novo Cavaleiro</h2>
+            <h3>Para mais informações de personagens,<a href="https://saintseiya.fandom.com/pt-br/wiki/Saint_Seiya_Wiki" target="_blank" > clique aqui.</a></h3>
 
     <form action="/add" method='post'>
 
@@ -59,14 +63,14 @@
    
     </form>
 
-                                  </section>
+    </section>
 
       <h1 id ='subtitulo'>Cavaleiros de Bronze</h1>
 
         <section id='cards'>
  
             <% cavaleiros.forEach((personagem)=> { %>
-          <div>
+          <div id ='<%= personagem.id %>'>
                 <h2 class ='id'> <%= personagem.id %> </h2>
                 <h2 class ='nome'> <%= personagem.nome %> </h2>
                 <img src="<%= personagem.imagem %>" alt = 'cavaleiro'>
@@ -81,19 +85,19 @@
                   <p class = habilidade>Golpe Especial: <%= personagem.habilidade %></p>
 
                   <h3 class = 'descriçao'>Descrição: <%= personagem.descriçao %></h3>                
-              </div>                        <% }) %>
-
-          <img id ='background' src='https://i.pinimg.com/originals/f2/d2/1e/f2d21e3eabd1a79d69dc046d99ae9905.jpg'>
-                
+          </div>                        <% }) %>
+                       
         </section>
 
+        <footer>Este é um projeto criado por Guilherme Macedo.</footer>
+
   </main>
+
+  
  
 </body>
 </html>
 
 
-
-
-
+      
         

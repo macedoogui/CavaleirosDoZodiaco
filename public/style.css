@@ -17,14 +17,24 @@ nav{
   position: fixed;
   height:100vh;
   overflow-y: scroll;
-  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqPG6eqYuPx3opyB_C10Ub7EDcz8vzPx5qA35ZL7uqgZP49XmRYMvn_CdR1yjVGl-NkzU&usqp=CAU');
+  background-image:url('https://img.myloview.com.br/adesivos/estrela-constelacao-vector-400-65617242.jpg');
   color:white;
+  z-index:9999;
+}
+
+nav h1{
+  padding-left:1rem;
+  text-decoration:none;
+}
+
+nav h1 a{
+  color:gold;
 }
 
 main{
   position:absolute;
   left:20%;
-  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqPG6eqYuPx3opyB_C10Ub7EDcz8vzPx5qA35ZL7uqgZP49XmRYMvn_CdR1yjVGl-NkzU&usqp=CAU');  
+  text-align:center;
 }
 
 #logo{
@@ -43,16 +53,35 @@ ul{
   padding:0 5px 5px 15px;
 }
 
+ul h2 a{
+  color:#f6f5faf5;
+  text-decoration:underline;
+}
+
 header{
   font-family: Fredoka;
   text-align: center;
+  background-color: black;
+  height:12rem; 
+  width:67rem;
+  margin-left:.4rem;
+  
   
 }
 
 #cadastro h2{
-  color: gold;
+  color: rgb(3, 3, 3);
   padding-bottom: 3rem;
   width:100%;
+}
+
+#cadastro h3{
+  color: rgb(3, 3, 3);
+  padding-bottom: 3rem;
+  width:100%;
+}
+h3 a{
+  color:red;
 }
 
 #cadastro{
@@ -67,13 +96,11 @@ header{
   width:50%;
   border:groove #FFD700;
   box-shadow: inset 0 0 1em #FFD700;
-  
+  background-color:#00000099;  
 }
 
 label{
-  color:gold;
-  
-  
+  color:gold; 
 }
 
 #cadastro input{
@@ -87,7 +114,7 @@ button#cadastrar{
     font-size:1rem;
     cursor:pointer;
   transition:all .3s ease-in-out
-  }
+}
 
 button#cadastrar:hover{
     padding:1rem;
@@ -97,27 +124,19 @@ button#cadastrar:hover{
     color:black;
   cursor:pointer;
   transition:all .3s ease-in-out
-  }
+}
 
 #subtitulo{
   margin-top: 2rem;;
   font-family: Fredoka;
-  color:#d6ba00; 
+  color:#0a0a0a; 
 }
 
 section#cards{
   
   display:flex;
   flex-wrap: wrap;
-  justify-content:space-evenly;   
-}
-
-#background{
-  position:fixed;
-  z-index:1;
-  left:20%;
-  height:80%;
-  opacity:.5;
+  justify-content:space-evenly;  
 }
 
 div{  
@@ -129,8 +148,25 @@ div{
   background-color:#05050590;
   border:groove #CD7F32;
   box-shadow: inset 0 0 1em #CD7F32;
-  background-image='https://i.pinimg.com/originals/f2/d2/1e/f2d21e3eabd1a79d69dc046d99ae9905.jpg';
+  background-image:url('https://img.myloview.com.br/adesivos/estrela-constelacao-vector-400-65617242.jpg');
+  
 }
+
+#background{
+  position:fixed;
+  width:100%;
+  height:100vh;
+}
+
+footer{
+  background-color: black;
+  color:white;
+  width:100%;
+  margin-top:5rem;
+  text-align:end;
+} 
+
+
 
 
 
